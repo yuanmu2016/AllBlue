@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">深蓝</string>
+
+    <string name="house">租房</string>
+    <string name="activity">活动</string>
+    <string name="job">工作</string>
+    <string name="online">线上</string>
+
+    <string name="futian">福田</string>
+    <string name="nanshan">南山</string>
+    <string name="luohu">罗湖</string>
+    <string name="baoan">宝安</string>
+    <string name="yantian">盐田</string>
+    <string name="longhua">龙华</string>
+    <string name="longgang">龙岗</string>
+    <string name="shenzhen">全深圳</string>
+
+</resources>

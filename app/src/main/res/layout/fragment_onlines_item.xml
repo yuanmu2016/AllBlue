@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_selector">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/colorTitle"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        >
+        <ImageView
+            android:background="@drawable/online_participate"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            />
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/text_participant_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_gravity="center"
+            />
+
+
+        <ImageView
+            android:background="@drawable/image"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/text_img_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textColor="@color/colorContent"
+        android:lineSpacingMultiplier="1.5"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        >
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

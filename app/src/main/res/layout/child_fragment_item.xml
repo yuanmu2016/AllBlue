@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/layout_selector">
+
+    <ImageView
+        android:id="@+id/image_poster"
+        android:layout_width="100dp"
+        android:layout_height="150dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/colorTitle"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorContent"
+            />
+        <TextView
+            android:id="@+id/text_place"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorContent"
+            />
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorTitle"
+            />
+        <TextView
+            android:id="@+id/text_people"
+            android:padding="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="10sp"
+            android:textColor="@color/colorTitle"
+            android:background="@color/colorDivider"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lib.homhomlib.design.SlidingLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorForeground">
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorDivider">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/convenient_banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:canLoop="true"
+            >
+        </com.bigkoo.convenientbanner.ConvenientBanner>
+
+
+        <com.yuanmu.allblue.view.EmbedGridView
+            android:id="@+id/embed_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:horizontalSpacing="1px"
+            android:verticalSpacing="1px">
+
+        </com.yuanmu.allblue.view.EmbedGridView>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_bed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_selector"
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:padding="3dp"
+                android:src="@drawable/bed"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="床位"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:text="男生床位，女生床位，合租"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_alone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_selector"
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/zhengzu"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="整租"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:text="专为出租“整套房子”或正在找“整租”的人们"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_gay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_selector"
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gay"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="同志"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:text="俺们同志就是要住在一起！在一起。在一起。。。"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_roommate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_selector"
+
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/room_friend"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="求室友"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:text="找找找啊找室友 找到一个好室友 "
+               />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorDivider"/>
+    </LinearLayout>
+</ScrollView>
+
+</lib.homhomlib.design.SlidingLayout>
